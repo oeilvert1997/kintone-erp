@@ -1,0 +1,29 @@
+{
+  "name": "kintone-erp",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "src/apps/*"
+  ],
+  "scripts": {
+    "infisical": "./node_modules/@infisical/cli/bin/infisical",
+    "gen:types": "bun infisical run -- bun sync-types.ts",
+    "build:order": "vite build --mode order"
+  },
+  "dependencies": {
+    "solid-js": "1.9.12"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.11",
+    "typescript": "^6.0.2",
+    "vite": "8.0.3",
+    "vite-plugin-solid": "2.11.11",
+    "@infisical/cli": "0.43.67",
+    "@kintone/cli": "1.19.2",
+    "@kintone/dts-gen": "9.0.3"
+  },
+  "trustedDependencies": [
+    "@infisical/cli"
+  ]
+}
