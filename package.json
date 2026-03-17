@@ -1,0 +1,18 @@
+{
+  "name": "kintone-erp",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "vite",
+    "gen-dts": "kintone-dts-gen --app 1 --output ./types"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0",
+    "@kintone/cli": "^1.19.1",
+    "@kintone/dts-gen": "^9.0.2"
+  }
+}
