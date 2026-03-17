@@ -1,0 +1,27 @@
+{
+  "name": "kintone-erp",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "humao.rest-client",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        // Editor settings
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "eslint.validate": ["javascript", "typescript"],
+
+        // Terminal settings
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
